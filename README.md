@@ -36,6 +36,7 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 - [NIP-57: Lightning Zaps](57.md)
 - [NIP-58: Badges](58.md)
 - [NIP-65: Relay List Metadata](65.md)
+- [NIP-69: Polling Event Kind](69.md)
 
 ## Event Kinds
 | kind          | description                      | NIP                     |
@@ -55,6 +56,7 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 | 44            | Channel Mute User                | [28](28.md)             |
 | 45-49         | Public Chat Reserved             | [28](28.md)             |
 | 1984          | Reporting                        | [56](56.md)             |
+| 6969          | Poll                             | [69](69.md)             |
 | 9734          | Zap Request                      | [57](57.md)             |
 | 9735          | Zap                              | [57](57.md)             |
 | 10002         | Relay List Metadata              | [65](65.md)             |
