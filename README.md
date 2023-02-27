@@ -36,7 +36,7 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 - [NIP-57: Lightning Zaps](57.md)
 - [NIP-58: Badges](58.md)
 - [NIP-65: Relay List Metadata](65.md)
-- [NIP-69: Polling Event Kind](69.md)
+- [NIP-69: Polls](69.md)
 
 ## Event Kinds
 | kind          | description                      | NIP                     |
