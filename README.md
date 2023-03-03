@@ -37,6 +37,7 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 - [NIP-58: Badges](58.md)
 - [NIP-65: Relay List Metadata](65.md)
 - [NIP-69: Polls](69.md)
+- [NIP-78: Application-specific data](78.md)
 
 ## Event Kinds
 | kind          | description                      | NIP                     |
@@ -62,13 +63,14 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 | 10002         | Relay List Metadata              | [65](65.md)             |
 | 22242         | Client Authentication            | [42](42.md)             |
 | 24133         | Nostr Connect                    | [46](46.md)             |
+| 30008         | Profile Badges                   | [58](58.md)             |
+| 30009         | Badge Definition                 | [58](58.md)             |
 | 30023         | Long-form Content                | [23](23.md)             |
+| 30078         | Application-specific Data        | [78](78.md)             |
 | 1000-9999     | Regular Events                   | [16](16.md)             |
 | 10000-19999   | Replaceable Events               | [16](16.md)             |
 | 20000-29999   | Ephemeral Events                 | [16](16.md)             |
 | 30000-39999   | Parameterized Replaceable Events | [33](33.md)             |
-| 30008         | Profile Badges                   | [58](58.md)             |
-| 30009         | Badge Definition                 | [58](58.md)             |
 
 ## Message types
 
@@ -86,7 +88,7 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 | EVENT  | used to send events requested to clients                | [1](01.md)  |
 | NOTICE | used to send human-readable messages to clients         | [1](01.md)  |
 | EOSE   | used to notify clients all stored events have been sent | [15](15.md) |
-| OK     | used to notify clients if an EVENT was successuful      | [20](20.md) |
+| OK     | used to notify clients if an EVENT was successful       | [20](20.md) |
 | AUTH   | used to send authentication challenges                  | [42](42.md) |
 
 Please update these lists when proposing NIPs introducing new event kinds.
