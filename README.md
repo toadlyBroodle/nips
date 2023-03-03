@@ -107,8 +107,8 @@ When experimenting with kinds, keep in mind the classification introduced by [NI
 | subject             | subject                 |                   | [14](14.md)              |
 | d                   | identifier              |                   | [33](33.md)              |
 | expiration          | unix timestamp (string) |                   | [40](40.md)              |
-| poll_options        | poll options (list)     |                   | [69](69.md)              |
-| poll_option         | poll option (integar)   | description (str) | [69](69.md)              |
+| poll_options        | options (integar array) | description (str) | [69](69.md)              |
+| poll_option         | poll option (integar)   |                   | [69](69.md)              |
 | tally_method        | "value" OR "count"      |                   | [69](69.md)              |
 | consensus_threshold | consensus % (integar)   |                   | [69](69.md)              |
 | closed_at           | unix timestamp (string) |                   | [69](69.md)              |
