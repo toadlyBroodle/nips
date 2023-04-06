@@ -9,7 +9,7 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 - [NIP-05: Mapping Nostr keys to DNS-based internet identifiers](05.md)
 - [NIP-06: Basic key derivation from mnemonic seed phrase](06.md)
 - [NIP-07: `window.nostr` capability for web browsers](07.md)
-- [NIP-08: Handling Mentions](08.md)
+- [NIP-08: Handling Mentions](08.md) – `unrecommended`: deprecated in favor of [NIP-27](27.md)
 - [NIP-09: Event Deletion](09.md)
 - [NIP-10: Conventions for clients' use of `e` and `p` tags in text events](10.md)
 - [NIP-11: Relay Information Document](11.md)
@@ -18,6 +18,7 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 - [NIP-14: Subject tag in text events.](14.md)
 - [NIP-15: End of Stored Events Notice](15.md)
 - [NIP-16: Event Treatment](16.md)
+- [NIP-18: Reposts](18.md)
 - [NIP-19: bech32-encoded entities](19.md)
 - [NIP-20: Command Results](20.md)
 - [NIP-21: `nostr:` URL scheme](21.md)
@@ -25,13 +26,17 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 - [NIP-23: Long-form Content](23.md)
 - [NIP-25: Reactions](25.md)
 - [NIP-26: Delegated Event Signing](26.md)
+- [NIP-27: Text Note References](27.md)
 - [NIP-28: Public Chat](28.md)
 - [NIP-33: Parameterized Replaceable Events](33.md)
 - [NIP-36: Sensitive Content](36.md)
+- [NIP-39: External Identities in Profiles](39.md)
 - [NIP-40: Expiration Timestamp](40.md)
 - [NIP-42: Authentication of clients to relays](42.md)
+- [NIP-45: Counting results](45.md)
 - [NIP-46: Nostr Connect](46.md)
 - [NIP-50: Keywords filter](50.md)
+- [NIP-51: Lists](51.md)
 - [NIP-56: Reporting](56.md)
 - [NIP-57: Lightning Zaps](57.md)
 - [NIP-58: Badges](58.md)
@@ -40,6 +45,7 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 - [NIP-78: Application-specific data](78.md)
 
 ## Event Kinds
+
 | kind          | description                      | NIP                     |
 | ------------- | -------------------------------- | ----------------------- |
 | 0             | Metadata                         | [1](01.md), [5](05.md)  |
@@ -60,9 +66,13 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 | 6969          | Poll                             | [69](69.md)             |
 | 9734          | Zap Request                      | [57](57.md)             |
 | 9735          | Zap                              | [57](57.md)             |
+| 10000         | Mute List                        | [51](51.md)             |
+| 10001         | Pin List                         | [51](51.md)             |
 | 10002         | Relay List Metadata              | [65](65.md)             |
 | 22242         | Client Authentication            | [42](42.md)             |
 | 24133         | Nostr Connect                    | [46](46.md)             |
+| 30000         | Categorized People List          | [51](51.md) |
+| 30001         | Categorized Bookmark List        | [51](51.md) |
 | 30008         | Profile Badges                   | [58](58.md)             |
 | 30009         | Badge Definition                 | [58](58.md)             |
 | 30023         | Long-form Content                | [23](23.md)             |
@@ -81,6 +91,7 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 | REQ   | used to request events and subscribe to new updates | [1](01.md)  |
 | CLOSE | used to stop previous subscriptions                 | [1](01.md)  |
 | AUTH  | used to send authentication events                  | [42](42.md) |
+| COUNT | used to request event counts                        | [45](45.md) |
 
 ### Relay to Client
 | type   | description                                             | NIP         |
@@ -90,6 +101,7 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 | EOSE   | used to notify clients all stored events have been sent | [15](15.md) |
 | OK     | used to notify clients if an EVENT was successful       | [20](20.md) |
 | AUTH   | used to send authentication challenges                  | [42](42.md) |
+| COUNT  | used to send requested event counts to clients          | [45](45.md)  |
 
 Please update these lists when proposing NIPs introducing new event kinds.
 
