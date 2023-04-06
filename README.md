@@ -71,8 +71,8 @@ NIPs stand for **Nostr Implementation Possibilities**. They exist to document wh
 | 10002         | Relay List Metadata              | [65](65.md)             |
 | 22242         | Client Authentication            | [42](42.md)             |
 | 24133         | Nostr Connect                    | [46](46.md)             |
-| 30000         | Categorized People List          | [51](51.md) |
-| 30001         | Categorized Bookmark List        | [51](51.md) |
+| 30000         | Categorized People List          | [51](51.md)             |
+| 30001         | Categorized Bookmark List        | [51](51.md)             |
 | 30008         | Profile Badges                   | [58](58.md)             |
 | 30009         | Badge Definition                 | [58](58.md)             |
 | 30023         | Long-form Content                | [23](23.md)             |
